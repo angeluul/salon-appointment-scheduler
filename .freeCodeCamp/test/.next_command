@@ -25,3 +25,19 @@ trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 psql --username=freecodecamp --dbname=postgres
 chmod +x salon.sh
+git remote set-url origin https://github.com/angeluul/salon-appointment-scheduler.git
+git branch -M main
+git push -u origin main
+git push -f origin master
+git pull
+git push -u origin main
+git pull origin main
+got config pull.rebase false
+git config pull.rebase false
+git push -u origin main
+git pull
+git remote set-url origin https://github.com/angeluul/salon-appointment-scheduler.git
+git branch -M main
+git push -u origin main
+git checkout -b branchy
+git add .
